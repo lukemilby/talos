@@ -109,7 +109,7 @@ cluster:
               - openebs
 ```
 
-Using gen config
+Using gen config. This will merge the above configs with a newly generated config. Use this for a new Talso deployement.
 
 ```bash
 talosctl gen config my-cluster https://mycluster.local:6443 --config-patch-control-plane=@mayastor-patch-cp.yaml --config-patch-worker @mayastor-patch.yaml
